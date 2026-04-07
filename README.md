@@ -176,3 +176,7 @@ See `requirements.txt` for pinned versions. Key libraries:
 ## 📊 Profiling
 
 See `profiling_analysis.ipynb` for the full profiling analysis including cProfile output showing 111,662 function calls in 0.137s, line_profiler breakdown identifying lines 13–14 (inner tile loop) as consuming 76.5% of runtime, before/after timing comparison, and speedup charts across all configurations.
+
+
+## 🎥 Demo Video
+You can watch the Demo video here: [Watch Demo Video on Google Drive]([PASTE_YOUR_LINK_HERE](https://drive.google.com/drive/folders/1TMzm9mlvwtxXVq4csq0mzP80sIcd-i92?usp=sharing))
