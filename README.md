@@ -179,4 +179,4 @@ See `profiling_analysis.ipynb` for the full profiling analysis including cProfil
 
 
 ## 🎥 Demo Video
-You can watch the Demo video here: [Watch Demo Video on Google Drive (https://drive.google.com/drive/folders/1TMzm9mlvwtxXVq4csq0mzP80sIcd-i92?usp=sharing)
+You can watch the Demo video here: [Watch Demo Video](https://drive.google.com/drive/folders/1TMzm9mlvwtxXVq4csq0mzP80sIcd-i92?usp=sharing)
