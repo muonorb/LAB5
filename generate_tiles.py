@@ -28,15 +28,15 @@ def main():
     TILE_DIR.mkdir(exist_ok=True)
     tiles = []
 
-    # 16 grayscale shades from black to white
-    for i in range(16):
-        v = int(i * 255 / 15)
+    # 32 grayscale shades from black to white (finer ramp than before)
+    for i in range(32):
+        v = int(i * 255 / 31)
         tiles.append((f"gray_{v:03d}", make_solid_tile(v, v, v)))
 
-    # 12 hues × 3 saturation levels = 36 colorful tiles
-    for hue_deg in range(0, 360, 30):
+    # 24 hues (every 15°) × 4 saturation levels = 96 colorful tiles
+    for hue_deg in range(0, 360, 15):
         h = hue_deg / 2  # OpenCV hue range is 0–180
-        for s in [128, 200, 255]:
+        for s in [100, 160, 210, 255]:
             hsv = np.full((TILE_SIZE, TILE_SIZE, 3), [h, s, 220], dtype=np.uint8)
             tiles.append((f"hue_{hue_deg:03d}_s{s}", cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)))
 
